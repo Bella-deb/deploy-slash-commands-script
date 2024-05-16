@@ -1,5 +1,5 @@
 const { REST, Routes } = require("discord.js");
-const { clientId, token, guildId } = require("../config.json"); // Add guildId to your config
+const { clientId, token, guildId } = require("../config.json"); // Needed values from config.json
 const fs = require("fs");
 const path = require("path");
 
@@ -43,7 +43,7 @@ const rest = new REST().setToken(token);
       .filter((cmd) => cmd.developer)
       .map((cmd) => cmd.command);
 
-    console.log(`${green("[INFO]")} Deploying Slash Commands To Xenco...`);
+    console.log(`${green("[INFO]")} Deploying Slash Commands...`);
     if (slashCommands.length > 0) {
       console.log(
         `[${green("+")}] Deploying ${bold(
