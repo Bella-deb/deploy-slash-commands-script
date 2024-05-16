@@ -2,6 +2,9 @@
 - A script for deploying slash commands made for Discord.js v14 bots. Uses config.json
 
 ## How To Use:
+The npm package *Colorette* is **REQUIRED** for this script to function.
+Install colorette using: `npm i colorette`
+
 This slash command deployer gets the development server guild id, the client id, and the bot token from a config.json file. If your bot uses dotenv, please use another tool.
 
 This file should be located inside of a "utils" folder in your bots code, this allows the code to execute properly.
